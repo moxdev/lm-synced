@@ -1,0 +1,88 @@
+.home {
+
+    .home-feature-img {
+        min-height: 200px;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: $color__overlay;
+            opacity: .5;
+            z-index: 1;
+        }
+    }
+
+    .home-header-wrapper {
+        @extend .wrapper;
+        max-width: 600px;
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 6em;
+        position: relative;
+        z-index: 5;
+
+        iframe {
+            border: 10px solid $color__blue;
+            -webkit-font-smoothing: antialiased;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            touch-action: manipulation;
+        }
+
+        @media only screen and (max-width:600px) {
+            .home-header-video-wrapper {
+                position: relative;
+                padding-bottom: 50.25%; /* 16:9 */
+                padding-top: 25px;
+                height: 0;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .home-title {
+        font-size: 3.2em;
+        letter-spacing: 1.3px;
+        line-height: 1.1;
+        text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .home-header-content {
+        color: #fff;
+        font-size: 1.3em;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .home-header-button-wrapper {
+
+        a {
+            text-decoration: none;
+            letter-spacing: 1.3px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+
+}

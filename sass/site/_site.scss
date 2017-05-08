@@ -1,0 +1,70 @@
+.wrapper {
+    max-width: $width_max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    @include padding-left-right;
+}
+
+.center {
+    text-align: center;
+}
+
+.feature-img {
+    min-height: 250px;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+    .section-header-wrapper {
+        width: 90%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .section-header {
+            margin:auto;
+
+            .section-title {
+                padding-left: .5em;
+                padding-right: .5em;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// .wrapper-wide {
+//     @extend .wrapper;
+//     max-width: $width_max-content-width-lg;
+// }
+
+// #content {
+//     background-color:;
+//     color:;
+//     padding-top:
+// }
+
+.error-404 .page-content {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "footer/footer";

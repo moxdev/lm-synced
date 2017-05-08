@@ -1,0 +1,92 @@
+#colophon {
+    background-color: $color__bg-dkgray;
+
+    .site-info {
+        @include section-padding;
+        @include padding-left-right;
+        text-align: center;
+
+        .contact-wrapper {
+            margin-bottom: 2em;
+            a {
+                display: block;
+                margin: .5em 0;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            @include respond-to(small) {
+
+            }
+        }
+
+        .social-wrapper {
+
+            svg {
+                margin: 0 5px;
+            }
+
+            .bbb {
+                svg {
+                    width: 75px;
+                    padding-top: 5px;
+                }
+            }
+
+            .pcc {
+                svg {
+                    width: 55px;
+                }
+            }
+
+            @include respond-to(small) {
+
+            }
+        }
+
+        .privacy-wrapper {
+            margin-top: 3em;
+            a {
+                display: block;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            @include respond-to(small) {
+
+            }
+        }
+
+        @include respond-to(small) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .flex-wrapper {
+                flex: 1;
+                text-align: left;
+
+                .contact-wrapper {
+                    display: flex;
+                    margin-bottom: .5em;
+
+                    .link-wrapper {
+                        padding-left: 2em;
+                    }
+                }
+
+                .social-wrapper {
+                    padding-left: 6em;
+                }
+            }
+
+            .privacy-wrapper {
+                flex: 1;
+                text-align: right;
+                margin-top: 0;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,129 @@
+.blog {
+
+    .featured-image-full-width {
+        width: 100%;
+        min-height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+
+    .featured-title {
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        @include padding-left-right;
+        @include padding-top-bottom;
+        text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+    }
+
+    .entry-title {
+
+        a {
+            text-decoration: none;
+            color: $color__h2;
+        }
+    }
+
+    #primary {
+
+    }
+
+    #secondary {
+        margin-top: 3em;
+        clear: both;
+
+    }
+
+    @include respond-to(medium) {
+        .wrapper {
+            display: flex;
+
+            #primary {
+                flex: 2;
+                order: 2;
+
+            }
+
+            #secondary{
+                flex: 1;
+                order: 1;
+                display: block;
+                margin-top: 0;
+            }
+        }
+    }
+
+    .blog-post-wrapper {
+        background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/blog-biz.svg);
+        background-repeat: no-repeat;
+        background-position: 110% 10%;
+        background-size: 90%;
+
+        .post {
+            margin-bottom: 3em;
+        }
+
+        .pagination {
+            clear:both;
+            position:relative;
+            font-size:11px; /* Pagination text size */
+            line-height:13px;
+            float:left; /* Pagination float direction */
+            margin-bottom: 3em;
+
+            .intro {
+                background-color: transparent;
+                color: $color__dark-gray;
+            }
+
+        }
+
+        .pagination span, .pagination a {
+            display:block;
+            float:left;
+            margin: 2px 2px 2px 0;
+            padding:6px 9px 5px 9px;
+            text-decoration:none;
+            width:auto;
+            color:#fff; /* Pagination text color */
+            background: $color__green; /* Pagination non-active background color */
+            transition: background .15s ease-in-out;
+        }
+
+        .pagination a:hover{
+            color:#fff;
+            background: $color__purple; /* Pagination background on hover */
+        }
+
+        .pagination .current{
+            padding:6px 9px 5px 9px;
+            background: $color__purple; /* Current page background */
+            color:#fff;
+        }
+
+        .view-full-post {
+            a {
+                text-decoration: none;
+                margin-left: .5em;
+                color: $color__purple;
+            }
+        }
+    }
+}
+
+
+
+.post-template-default {
+
+    .site-content {
+        @include padding-left-right;
+        @extend .wrapper;
+    }
+
+}

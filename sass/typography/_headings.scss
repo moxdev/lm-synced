@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+    font-weight: normal;
+}
+
+h1 {
+    color: $color__h1;
+    font-family: $font__black;
+}
+
+h2 {
+    color: $color__h2;
+    font-family: $font__semibold;
+    margin-bottom: .5em;
+    // font-size: 1.6em;
+}
+
+h3 {
+    color: $color__h3;
+    font-family: $font__semibold;
+    margin-top: .5em;
+    // font-size: 1.1em;
+}
+
+h4 {
+
+}
+
+h1.section-title {
+    text-align: center;
+    letter-spacing: 1.6px;
+    line-height: 1.1;
+    text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
+}
+
+h1.associates-entry-title {
+    color: $color__purple;
+    margin: 0 auto;
+    line-height: 1.1;
+}

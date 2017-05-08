@@ -1,0 +1,40 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: $color__background-button;
+	color: $color__button;
+	font-family: $font__black;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 25px;
+	font-size: .8rem;
+	letter-spacing: .125em;
+	padding: 1em 3.5em;
+	transition:background-color .25s, box-shadow .25s;
+	@include font-smooth;
+
+
+	&:hover {
+		background-color: lighten($color__background-button, 10%);
+		// box-shadow: inset 0 0 2em darken($color__background-button, 20%);
+	}
+
+	&:active,
+	&:focus {
+
+	}
+}
+
+.green-btn {
+	background-color: $color__btn-green;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	transition:background-color .50s;
+
+	&:hover {
+		background-color: lighten($color__btn-green, 20%);
+		// color: darken(#e8e8e8, 20%);
+	}
+}
